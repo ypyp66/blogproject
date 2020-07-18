@@ -1,0 +1,13 @@
+{% extends 'base.html'%}
+{% block contents %}
+      <div class="conatiner" style="margin: 30px;">
+        <form method="POST">
+            {% csrf_token %}
+            <table>
+                {{form.as_table}}
+            </table>
+            <br>
+            <input calss="btn btn-primary" type="submit" value="제출하기">
+        </form>
+      </div>
+{% endblock %}

@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+{% block contents %}
+      <div class="card text-center" style="width: inherit; margin: 30px;" >
+        <div class="card-body">
+            <h1 class="card-title">제목 : {{details.title}}</h1>
+            <p class="card-text">내용 : {{details.body}}</p>
+            <p><a href="{% url 'home'%}">돌아가기</a></p>
+        </div>
+      </div>
+{% endblock %}
